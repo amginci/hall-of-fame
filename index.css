@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@700&display=swap");
+
+/* Define variables in root */
+:root {
+  --clr-neutral-100: #fff;
+  --clr-gold: #c59000;
+  --clr-dark-blue: #444059;
+  --ff-primary: "Inter", sans-serif;
+  --ff-deco: "Josefin Sans", sans-serif;
+}
+html {
+  user-select: none;
+}
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: ;
+  background: linear-gradient(180deg, #fff 16.94%, #bf8e00 100%);
+  background-attachment: fixed;
+  height: 100dvh;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h2,
+h3,
+p {
+  margin-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+/* .form-container {
+  height: 30%;
+  text-align: center;
+  margin-block: 50px;
+ 
+
+}
+.praise-container {
+  height: 70%;
+  overflow-y: scroll; 
+} */
+img {
+  width: 150px;
+  mix-blend-mode: multiply;
+  margin-block: 32px;
+}
+
+.input-fields {
+  width: 317px;
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  padding: 12px;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-neutral-100);
+  border-radius: 8px;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  font-family: var(--ff-primary);
+}
+textarea::placeholder {
+  text-align: left;
+  font-size: 15px;
+}
+#praise-message {
+  width: 317px;
+  height: 119px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.from-to-inputs {
+  max-width: 317px;
+  width: 317px;
+  display: flex;
+  gap: 8px;
+}
+#praise-from,
+#praise-to {
+  padding: 12px;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-neutral-100);
+  border-radius: 8px;
+  border: none;
+  text-align: left;
+  flex: 1 1 0px; /* so both inputs are the same size */
+  width: 0; /* so both inputs are the same size */
+  font-size: 15px;
+  font-family: var(--ff-primary);
+}
+
+#publish-btn {
+  margin-top: 8px;
+  padding-block: 15px;
+  background-color: var(--clr-gold);
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-deco);
+  font-weight: 800;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#publish-btn:hover {
+  background-color: #a87100;
+  transition: background-color 250ms ease-in;
+}
+h1 {
+  font-family: var(--ff-deco);
+  font-size: 20px;
+  color: var(--clr-dark-blue);
+  margin-block: 20px;
+  text-align: center;
+}
+
+#praise-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.praise_card {
+  width: 317px;
+  height: 100%;
+  padding: 15px;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-dark-blue);
+  margin-bottom: 20px;
+}
+.praise-to_name {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.praise-receiver {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  margin-top: 8px;
+}
+.praise-love {
+  display: flex;
+}
+#heart-icon {
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Hall of Fame</title>
+  </head>
+  <body>
+    <div class="container">
+     
+        <img src="images/hof.png" alt="Hall of Fame" />
+        <div class="input-fields">
+          <textarea
+            id="praise-message"
+            type="text"
+            placeholder="Your praise message here"
+          ></textarea>
+          <div class="from-to-inputs">
+            <input
+              id="praise-from"
+              type="text"
+              placeholder="From"
+              label="From"
+            />
+            <input id="praise-to" type="text" placeholder="To" label="To" />
+          </div>
+          <button id="publish-btn" type="submit">Publish</button>
+        </div>
+      
+    
+        <h1>- Praises -</h1>
+        <div id="praise-list"></div>
+
+    </div>
+    <script src="index.js" type="module"></script>
+    <!-- type="module" so we can use import statements inside -->
+  </body>
+</html>
